@@ -15,6 +15,8 @@ grouped = data_emp.groupby("Department").agg('sum')
 
 
 #1. Load dataset from csv file (without using pandas, and with using pandas, use pandas from excel file, w/o header name, pipe seperated, and json file)
+data_loaded = pd.read_csv("City_of_Los_Angeles_Youth_Programs_2023-2024.csv")
+
 
 #2. Display records from department A alone
 
