@@ -15,11 +15,15 @@ grouped = data_emp.groupby("Department").agg('sum')
 
 
 #1. Load dataset from csv file (without using pandas, and with using pandas, use pandas from excel file, w/o header name, pipe seperated, and json file)
-data_loaded = pd.read_csv("City_of_Los_Angeles_Youth_Programs_2023-2024.csv")
+data_loaded = pd.read_csv("City_of_Los_Angeles_Youth_Programs_2023-2024.csv") #with using pandas
+
+import csv
+
 
 
 #2. Display records from department A alone
-
+finance_data = data_emp.groupby('Finance')
+print(finance_data)
 #3. Summary statistics of people who are getting more than $5,000 in salary (Who are working in city of SA)
-
+new_dataset = data_emp[
 #4. 
