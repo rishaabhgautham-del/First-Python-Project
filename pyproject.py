@@ -10,20 +10,25 @@ data_emp = pd.DataFrame(
 
 #can use groupby and agg of sum to find
 data_emp = data_emp.T
-grouped = data_emp.groupby("Department").agg('sum')
+grouped = data_emp.groupby("Department").agg('sum') #Look up the applications of the agg function
 
 
 
 #1. Load dataset from csv file (without using pandas, and with using pandas, use pandas from excel file, w/o header name, pipe seperated, and json file)
 data_loaded = pd.read_csv("City_of_Los_Angeles_Youth_Programs_2023-2024.csv") #with using pandas
 
-import csv
+#without using pandas
 
+#Using pandas from an excel file
+
+#Importing a file without header name
+
+#Printing out a pipe-separated file
+
+#Importing a json file
 
 
 #2. Display records from department A alone
 finance_data = data_emp.groupby('Finance')
 print(finance_data)
 #3. Summary statistics of people who are getting more than $5,000 in salary (Who are working in city of SA)
-new_dataset = data_emp[
-#4. 
